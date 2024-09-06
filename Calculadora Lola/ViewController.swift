@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func que_hacer_al_pushar_boton(_ sender: UIButton) {
         // TODO: Arreglar glitch del text quitando el optional
         let text_a_añadir = botones_interfaz[(sender.restorationIdentifier ?? boton_operacion.restorationIdentifier) ?? "boton"]?.numero
-        texto_a_cambiar.text = "\(texto_a_cambiar.text)\(text_a_añadir)"
+        texto_a_cambiar.text = "\(texto_a_cambiar.text ?? "")\(text_a_añadir!)"
     }
     
     
