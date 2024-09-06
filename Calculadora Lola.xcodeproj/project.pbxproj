@@ -16,6 +16,7 @@
 		354A4D182C7F79640078E6D0 /* Calculadora_LolaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A4D172C7F79640078E6D0 /* Calculadora_LolaTests.swift */; };
 		354A4D222C7F79640078E6D0 /* Calculadora_LolaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A4D212C7F79640078E6D0 /* Calculadora_LolaUITests.swift */; };
 		354A4D242C7F79640078E6D0 /* Calculadora_LolaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A4D232C7F79640078E6D0 /* Calculadora_LolaUITestsLaunchTests.swift */; };
+		359A094A2C8B57C00021D6C6 /* InterfazBotones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A09492C8B57C00021D6C6 /* InterfazBotones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		354A4D1D2C7F79640078E6D0 /* Calculadora LolaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calculadora LolaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		354A4D212C7F79640078E6D0 /* Calculadora_LolaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora_LolaUITests.swift; sourceTree = "<group>"; };
 		354A4D232C7F79640078E6D0 /* Calculadora_LolaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora_LolaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		359A09492C8B57C00021D6C6 /* InterfazBotones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfazBotones.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		354A4CFF2C7F79630078E6D0 /* Calculadora Lola */ = {
 			isa = PBXGroup;
 			children = (
+				359A09472C8B57810021D6C6 /* Modelo */,
 				354A4D002C7F79630078E6D0 /* AppDelegate.swift */,
 				354A4D022C7F79630078E6D0 /* SceneDelegate.swift */,
 				354A4D042C7F79630078E6D0 /* ViewController.swift */,
@@ -125,6 +128,22 @@
 				354A4D232C7F79640078E6D0 /* Calculadora_LolaUITestsLaunchTests.swift */,
 			);
 			path = "Calculadora LolaUITests";
+			sourceTree = "<group>";
+		};
+		359A09472C8B57810021D6C6 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				359A09482C8B578F0021D6C6 /* Interfaz */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		359A09482C8B578F0021D6C6 /* Interfaz */ = {
+			isa = PBXGroup;
+			children = (
+				359A09492C8B57C00021D6C6 /* InterfazBotones.swift */,
+			);
+			path = Interfaz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				354A4D052C7F79630078E6D0 /* ViewController.swift in Sources */,
+				359A094A2C8B57C00021D6C6 /* InterfazBotones.swift in Sources */,
 				354A4D012C7F79630078E6D0 /* AppDelegate.swift in Sources */,
 				354A4D032C7F79630078E6D0 /* SceneDelegate.swift in Sources */,
 			);
