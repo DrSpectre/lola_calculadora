@@ -23,14 +23,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-uz-Rqd">
-                                <rect key="frame" x="150.66666666666666" y="225.33333333333334" width="92" height="20.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-uz-Rqd">
+                                <rect key="frame" x="196.66666666666666" y="225.33333333333334" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-An-ERF">
-                                <rect key="frame" x="96.666666666666686" y="341" width="200" height="197.33333333333337"/>
+                                <rect key="frame" x="96.666666666666686" y="320.66666666666669" width="200" height="197.33333333333331"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kZZ-f8-uAj">
                                         <rect key="frame" x="0.0" y="0.0" width="34.666666666666664" height="197.33333333333334"/>
@@ -52,7 +52,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa7-y9-v09">
-                                                <rect key="frame" x="0.0" y="108.66666666666669" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="108.66666666666663" width="34.666666666666664" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="1" buttonSize="medium"/>
                                                 <connections>
@@ -89,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOf-wc-w07">
-                                                <rect key="frame" x="0.0" y="108.66666666666669" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="108.66666666666663" width="34.666666666666664" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="2" buttonSize="medium"/>
                                                 <connections>
@@ -126,7 +126,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv1-U4-EdO">
-                                                <rect key="frame" x="0.0" y="108.66666666666669" width="46.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="108.66666666666663" width="46.666666666666664" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="3" buttonSize="medium"/>
                                                 <connections>
