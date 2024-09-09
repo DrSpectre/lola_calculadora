@@ -35,13 +35,8 @@ class ViewController: UIViewController {
     }
     
     func crear_arreglo_botones() -> Void {
-        for numero in 0...9{
-            botones_interfaz["boton_\(numero)"] = IUBotonCalculadora(
-                    "boton_\(numero)",
-                    numero: Character("\(numero)"),
-                    operacion: ""
-                )
-        }
+        botones_interfaz = IUBotonCalculadora.crear_arreglo_botones()
+        
     }
     
 
