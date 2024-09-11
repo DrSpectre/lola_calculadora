@@ -49,15 +49,19 @@ class ViewController: UIViewController {
         else if (estado_actual == estados_de_la_calculadora.escoger_operacion){
             if let _mensajero_id = sender.restorationIdentifier{
                 operacion_actual = botones_interfaz[_mensajero_id]?.operacion
+                estado_actual = estados_de_la_calculadora.seleccionar_numeros
             }
             else {
                 operacion_actual = nil
             }
         }
-
+        
+        dibujar_numeros_u_operaciones_en_interfaz()
     }
     
     @IBAction func boton_escoger_operacion_pulsado(_ sender: UIButton){
+        //boton_operacion.setTitle("Ñ", for: .normal)
+        
         if (estado_actual == estados_de_la_calculadora.seleccionar_numeros){
             estado_actual = estados_de_la_calculadora.escoger_operacion
             dibujar_numeros_u_operaciones_en_interfaz()
@@ -66,8 +70,8 @@ class ViewController: UIViewController {
     
     
     func inicializar_calculadora() -> Void{
-        identificar_botones()
         crear_arreglo_botones()
+        identificar_botones()
     }
     
     func crear_arreglo_botones() -> Void {
@@ -76,11 +80,22 @@ class ViewController: UIViewController {
     
     func dibujar_numeros_u_operaciones_en_interfaz(){
         if(estado_actual == estados_de_la_calculadora.escoger_operacion){
+            for elemento in botones_interfaz.values{
+                elemento.referencia_a_boton_interfaz?.setTitle(
+                    elemento.operacion,
+                    for: .normal
+                )
+            }
             
         }
         
         else if (estado_actual == estados_de_la_calculadora.seleccionar_numeros){
-            
+            for elemento in botones_interfaz.values{
+                elemento.referencia_a_boton_interfaz?.setTitle(
+                    String(elemento.numero),
+                    for: .normal
+                )
+            }
         }
     }
     
@@ -93,10 +108,16 @@ class ViewController: UIViewController {
         
         for pila_de_componentes in vista_stack.subviews{
             for boton in pila_de_componentes.subviews{
-                print(boton.restorationIdentifier)
+                //print(type(of: boton))
+                if let identificador = boton.restorationIdentifier{
+                    botones_interfaz[identificador]?.referencia_a_boton_interfaz = boton as? UIButton
+                }
             }
         }
         
+        for elemento in botones_interfaz.values{
+            elemento.referencia_a_boton_interfaz?.setTitle("ñ", for: .normal)
+        }
         
         // self.view.subviews
         /*for stack_con_vista in vista_stack.subviews {

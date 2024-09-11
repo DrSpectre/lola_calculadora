@@ -165,7 +165,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Op"/>
                                                 <connections>
-                                                    <action selector="que_hacer_al_pushar_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tyz-S0-bQI"/>
+                                                    <action selector="boton_escoger_operacion_pulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFh-ml-fxF"/>
                                                 </connections>
                                             </button>
                                         </subviews>
