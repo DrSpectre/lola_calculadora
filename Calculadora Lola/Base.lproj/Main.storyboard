@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,38 +13,65 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculadora_Lola" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFl-Lo-0jS">
-                                <rect key="frame" x="170.66666666666666" y="163" width="52" height="26.333333333333343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-uz-Rqd">
-                                <rect key="frame" x="196.66666666666666" y="225.33333333333334" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-An-ERF">
-                                <rect key="frame" x="96.666666666666686" y="320.66666666666669" width="200" height="197.33333333333331"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ny-Vo-D0G">
+                                <rect key="frame" x="370.5" y="100" width="27" height="179.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="texto_operacion" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="xDE-6d-eVQ">
+                                        <rect key="frame" x="-34" y="116" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="BpI-i2-t4q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="texto_termino_actual" text=" TExto de prueba" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="75" translatesAutoresizingMaskIntoConstraints="NO" id="OLI-uz-Rqd">
+                                        <rect key="frame" x="-95.5" y="136" width="218" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="texto_segundo_termino" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="55" translatesAutoresizingMaskIntoConstraints="NO" id="kFl-Lo-0jS">
+                                        <rect key="frame" x="-103" y="101" width="61" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="61" id="8oP-Y5-o7p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kFl-Lo-0jS" secondAttribute="bottom" constant="41.5" id="4Da-uf-vqY"/>
+                                    <constraint firstItem="OLI-uz-Rqd" firstAttribute="top" secondItem="2ny-Vo-D0G" secondAttribute="top" constant="136" id="8oc-aZ-SB4"/>
+                                    <constraint firstItem="kFl-Lo-0jS" firstAttribute="top" secondItem="2ny-Vo-D0G" secondAttribute="top" constant="101" id="9Af-Ca-xaO"/>
+                                    <constraint firstItem="xDE-6d-eVQ" firstAttribute="leading" secondItem="kFl-Lo-0jS" secondAttribute="trailing" constant="8" symbolic="YES" id="9I9-ME-Hqh"/>
+                                    <constraint firstItem="OLI-uz-Rqd" firstAttribute="centerX" secondItem="2ny-Vo-D0G" secondAttribute="centerX" id="9mS-fE-M7n"/>
+                                    <constraint firstAttribute="trailing" secondItem="xDE-6d-eVQ" secondAttribute="trailing" constant="19" id="DJF-bN-Dtm"/>
+                                    <constraint firstItem="xDE-6d-eVQ" firstAttribute="top" secondItem="2ny-Vo-D0G" secondAttribute="top" constant="116" id="Ofl-Vy-2G6"/>
+                                    <constraint firstItem="kFl-Lo-0jS" firstAttribute="baseline" secondItem="xDE-6d-eVQ" secondAttribute="baseline" id="xq1-Co-eun"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-An-ERF">
+                                <rect key="frame" x="221.5" y="317" width="325" height="198"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kZZ-f8-uAj">
-                                        <rect key="frame" x="0.0" y="0.0" width="34.666666666666664" height="197.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="198"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_7" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deH-8e-8cB">
-                                                <rect key="frame" x="0.0" y="0.0" width="34.666666666666664" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="7"/>
                                                 <connections>
-                                                    <action selector="que_hacer_al_pushar_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PkN-5b-PA8"/>
+                                                    <action selector="que_hacer_al_pushar_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzV-u0-gr2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnY-JU-NYD">
-                                                <rect key="frame" x="0.0" y="54.333333333333314" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="4"/>
                                                 <connections>
@@ -52,7 +79,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa7-y9-v09">
-                                                <rect key="frame" x="0.0" y="108.66666666666663" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="109" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="1" buttonSize="medium"/>
                                                 <connections>
@@ -60,7 +87,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_resultado" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uow-Lb-oS3">
-                                                <rect key="frame" x="0.0" y="163" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="163.5" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="="/>
                                                 <connections>
@@ -70,10 +97,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dAp-Gg-qF9">
-                                        <rect key="frame" x="76.666666666666671" y="0.0" width="34.666666666666671" height="197.33333333333334"/>
+                                        <rect key="frame" x="139" y="0.0" width="47" height="198"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_8" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBy-2W-o45">
-                                                <rect key="frame" x="0.0" y="0.0" width="34.666666666666664" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="8"/>
                                                 <connections>
@@ -81,7 +108,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vg8-W1-DMl">
-                                                <rect key="frame" x="0.0" y="54.333333333333314" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="5"/>
                                                 <connections>
@@ -89,7 +116,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOf-wc-w07">
-                                                <rect key="frame" x="0.0" y="108.66666666666663" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="109" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="2" buttonSize="medium"/>
                                                 <connections>
@@ -97,7 +124,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJO-f9-vd3">
-                                                <rect key="frame" x="0.0" y="163" width="34.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="163.5" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="0"/>
                                                 <connections>
@@ -107,10 +134,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Uxw-A3-QUF">
-                                        <rect key="frame" x="153.33333333333331" y="0.0" width="46.666666666666657" height="197.33333333333334"/>
+                                        <rect key="frame" x="278" y="0.0" width="47" height="198"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_9" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUp-of-JyT">
-                                                <rect key="frame" x="0.0" y="0.0" width="46.666666666666664" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="9"/>
                                                 <connections>
@@ -118,7 +145,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngo-7t-Xn1">
-                                                <rect key="frame" x="0.0" y="54.333333333333314" width="46.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="6"/>
                                                 <connections>
@@ -126,7 +153,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv1-U4-EdO">
-                                                <rect key="frame" x="0.0" y="108.66666666666663" width="46.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="109" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="3" buttonSize="medium"/>
                                                 <connections>
@@ -134,7 +161,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="boton_operacion_seleccion" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnF-jG-WE9">
-                                                <rect key="frame" x="0.0" y="163" width="46.666666666666664" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="163.5" width="47" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Op"/>
                                                 <connections>
@@ -149,20 +176,26 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OLI-uz-Rqd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="166.33333333333334" id="9Fv-Ks-h8P"/>
-                            <constraint firstItem="OLI-uz-Rqd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cs8-eQ-R5z"/>
-                            <constraint firstItem="AaF-An-ERF" firstAttribute="top" secondItem="OLI-uz-Rqd" secondAttribute="bottom" constant="95.333333333333314" id="NRV-eH-1y0"/>
-                            <constraint firstItem="AaF-An-ERF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gSO-fm-2bk"/>
+                            <constraint firstItem="AaF-An-ERF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="59z-bf-qUL"/>
+                            <constraint firstItem="2ny-Vo-D0G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Bx-bS-jcY"/>
+                            <constraint firstItem="2ny-Vo-D0G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="86E-Pf-BDv"/>
+                            <constraint firstItem="AaF-An-ERF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BvH-su-lpQ"/>
+                            <constraint firstItem="AaF-An-ERF" firstAttribute="top" secondItem="2ny-Vo-D0G" secondAttribute="bottom" constant="37.5" id="XiK-dQ-d26"/>
+                            <constraint firstItem="2ny-Vo-D0G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="dbd-K5-ms4"/>
+                            <constraint firstItem="2ny-Vo-D0G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="370.5" id="zvi-Ea-7RG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="boton_operacion" destination="RnF-jG-WE9" id="KWS-bo-boH"/>
+                        <outlet property="operacion_texto" destination="xDE-6d-eVQ" id="kJy-1z-glv"/>
+                        <outlet property="segundo_termino_texto" destination="kFl-Lo-0jS" id="tZ0-Dw-jxH"/>
                         <outlet property="texto_a_cambiar" destination="OLI-uz-Rqd" id="gGa-GL-Mri"/>
+                        <outlet property="vista_stack" destination="AaF-An-ERF" id="CEa-X1-lUk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="134.88372093023256" y="3.4883720930232558"/>
         </scene>
     </scenes>
     <resources>
