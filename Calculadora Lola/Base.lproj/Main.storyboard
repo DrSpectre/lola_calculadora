@@ -51,7 +51,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="="/>
                                                 <connections>
-                                                    <action selector="que_hacer_al_pushar_boton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7au-xd-fm6"/>
+                                                    <action selector="obtener_resultado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQ5-cP-4OA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
